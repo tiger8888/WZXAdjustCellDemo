@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="422" id="gkf-v6-6SS" customClass="WZXCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gkf-v6-6SS" id="TGY-mE-5Pe">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbM-tV-sTW">
+                        <rect key="frame" x="0.0" y="88" width="375" height="53.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMZ-GI-RQB">
+                                <rect key="frame" x="252" y="12" width="45" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="3fY-Gc-x0r"/>
+                                </constraints>
+                                <state key="normal" title="按钮一">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn1:" destination="gkf-v6-6SS" eventType="touchUpInside" id="HOT-yp-LMQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLA-4F-DKk">
+                                <rect key="frame" x="322" y="12" width="45" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="zVu-uh-o2U"/>
+                                </constraints>
+                                <state key="normal" title="按钮二">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn2:" destination="gkf-v6-6SS" eventType="touchUpInside" id="TGF-I4-Odi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.76067512980697216" blue="0.71519409965680214" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aLA-4F-DKk" firstAttribute="top" secondItem="gbM-tV-sTW" secondAttribute="top" constant="12" id="2L6-9C-ZaW"/>
+                            <constraint firstItem="EMZ-GI-RQB" firstAttribute="top" secondItem="gbM-tV-sTW" secondAttribute="top" constant="12" id="8AP-pE-2ox"/>
+                            <constraint firstAttribute="bottom" secondItem="EMZ-GI-RQB" secondAttribute="bottom" constant="11.5" id="EdX-KB-XIC"/>
+                            <constraint firstItem="aLA-4F-DKk" firstAttribute="leading" secondItem="EMZ-GI-RQB" secondAttribute="trailing" constant="25" id="Ix6-RP-zop"/>
+                            <constraint firstAttribute="trailing" secondItem="aLA-4F-DKk" secondAttribute="trailing" constant="8" id="bW0-ei-Eu9"/>
+                            <constraint firstAttribute="bottom" secondItem="aLA-4F-DKk" secondAttribute="bottom" constant="11.5" id="swC-xz-d6X"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOd-4z-XlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.5886700039425643" blue="0.65228865573143779" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="lsV-G9-HFs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="TOd-4z-XlT" secondAttribute="trailing" constant="-8" id="1mg-2Z-4oN"/>
+                    <constraint firstItem="TOd-4z-XlT" firstAttribute="top" secondItem="TGY-mE-5Pe" secondAttribute="topMargin" constant="-8" id="5vv-zY-WQx"/>
+                    <constraint firstItem="gbM-tV-sTW" firstAttribute="leading" secondItem="TGY-mE-5Pe" secondAttribute="leadingMargin" constant="-8" id="E2h-l0-UD1"/>
+                    <constraint firstItem="gbM-tV-sTW" firstAttribute="top" secondItem="TOd-4z-XlT" secondAttribute="bottom" id="NS7-49-Nqb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gbM-tV-sTW" secondAttribute="trailing" constant="-8" id="osR-oR-MPw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gbM-tV-sTW" secondAttribute="bottom" constant="-9" id="vX5-Ey-6hS"/>
+                    <constraint firstItem="TOd-4z-XlT" firstAttribute="leading" secondItem="TGY-mE-5Pe" secondAttribute="leadingMargin" constant="-8" id="x2A-OU-5e5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="cellHeight" destination="lsV-G9-HFs" id="h3e-f6-USI"/>
+                <outlet property="topView" destination="TOd-4z-XlT" id="8h0-6z-MP0"/>
+            </connections>
+            <point key="canvasLocation" x="85.5" y="-86.5"/>
+        </tableViewCell>
+    </objects>
+</document>
